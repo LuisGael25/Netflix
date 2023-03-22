@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de registro</title>
+<meta charset="utf-8">
+<style type="text/css">
+body {
+	background-image: url(KINGSTON/Netflix/Fondo.png);
+}
+.Formulario {
+	color: #FFF;
+}
+</style>
+</head>
+<body>
+	<form action="procesar_formulario.php" method="POST" class="Formulario">
+		<p><img src="KINGSTON/Netflix/General/LOGO.png" width="299" height="147"><img src="KINGSTON/Netflix/General/Netflix_Logo_PMS.png" width="344" height="130"><img src="KINGSTON/Netflix/xi0yc6ll5x5a1.gif" width="142" height="116"></p>
+		<blockquote>
+		  <blockquote>
+		    <blockquote>
+		      <blockquote>
+		        <blockquote>
+		          <p> Bienvenido a la pagina de Netflix, por favor llena los siguientes datos para continuar</p>
+		          <p>&nbsp;</p>
+	            </blockquote>
+	          </blockquote>
+	        </blockquote>
+	      </blockquote>
+      </blockquote>
+	  <p>
+	    <label for="nombre">Nombre completo:</label>
+		  <input type="text" id="nombre" name="nombre" required>
+	  </p>
+		<p>
+
+		<label for="edad">Edad:</label>
+		<input type="radio" id="edad1" name="edad" value="menor">
+		Menor de edad
+		 <input type="radio" id="edad2" name="edad" value="mayor">Mayor de edad<br>
+
+		 <label for="nivel_estudios"><br>
+	      Nivel de estudios:</label>
+		 <select id="nivel_estudios" name="nivel_estudios">
+		   <option value="ninguno">Ninguno</option>
+		   <option value="primaria">Primaria</option>
+		   <option value="secundaria">Secundaria</option>
+		   <option value="preparatoria">Preparatoria</option>
+		   <option value="universidad">Universidad</option>
+		   <option value="posgrado">Posgrado</option>
+	      </select>
+		</p>
+		<p>
+		  
+		  <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+		  <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+		  
+		  <label for="pais"><br>
+		    <br>
+	      País:</label>
+		  <input type="text" id="pais" name="pais" required>
+		  
+		  <label for="ciudad">Ciudad:</label>
+		  <input type="text" id="ciudad" name="ciudad" required>
+		  
+		  <label for="telefono">Teléfono móvil:</label>
+		  <input type="tel" id="telefono" name="telefono" pattern="[0-9]{12}" required>
+		  
+		  <label for="comunidad"><br>
+		    <br>
+	      ¿Deseas pertenecer a la comunidad virtual de esta página?</label>
+		  <input type="checkbox" id="comunidad" name="comunidad" value="si">
+	  </p>
+		<p> 
+		  
+		  <label for="email">Dirección de correo electrónico:</label>
+		  <input type="email" id="email" name="email" required>
+		  
+		  <label for="contrasena">Contraseña:</label>
+		  <input type="password" id="contrasena" name="contrasena" required>
+		  
+		  <input type="submit" value="Enviar">
+	  </p>
+	</form>
+</body>
+</html>
+
